@@ -3,7 +3,6 @@ import axios from 'axios'
 
 export default {
   siteRoot: 'https://illulli.github.io',
-  basePath: 'staticSite1',
   getSiteData: () => ({
     title: 'React Static',
   }),
