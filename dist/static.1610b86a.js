@@ -294,7 +294,7 @@ var Home = function (_React$Component) {
           'Welcome to'
         ),
         _react2.default.createElement('img', { src: _logo2.default, alt: '' }),
-        'All Posts:',
+        'All Posts1:',
         _react2.default.createElement(
           'ul',
           null,
@@ -1498,4 +1498,4 @@ function toComment(sourceMap) {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.37eeba25.js.map
+//# sourceMappingURL=static.1610b86a.js.map

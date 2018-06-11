@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "https://illulli-1e5a.com/static/logo.9ff8fc2e.png"
   },
   {
-    "revision": "37eeba25a032b40c3ca9",
-    "url": "https://illulli-1e5a.com/static.37eeba25.js"
+    "revision": "1610b86a9cf5ffe4c448",
+    "url": "https://illulli-1e5a.com/static.1610b86a.js"
   }
 ];
