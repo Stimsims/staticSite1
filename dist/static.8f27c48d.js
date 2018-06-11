@@ -294,7 +294,7 @@ var Home = function (_React$Component) {
           'Welcome to'
         ),
         _react2.default.createElement('img', { src: _logo2.default, alt: '' }),
-        'All Posts1:',
+        'All Posts1222:',
         _react2.default.createElement(
           'ul',
           null,
@@ -349,7 +349,7 @@ exports.default = (0, _reactStatic.withRouteData)(function (_ref) {
       _reactStatic.Link,
       { to: '/' },
       '<',
-      ' Back'
+      ' Back1'
     ),
     _react2.default.createElement('br', null),
     _react2.default.createElement(
@@ -391,7 +391,7 @@ exports.default = function () {
     _react2.default.createElement(
       'h1',
       null,
-      'This is what we\'re all about.'
+      'This is wh3at we\'re all about.'
     ),
     _react2.default.createElement(
       'p',
@@ -1498,4 +1498,4 @@ function toComment(sourceMap) {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.1610b86a.js.map
+//# sourceMappingURL=static.8f27c48d.js.map

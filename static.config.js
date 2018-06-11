@@ -6,6 +6,10 @@ import React from 'react';
 /*
   siteRoot: 'https://illulli.github.io/',
   basePath:'staticSite1',
+
+  siteRoot: 'https://illulli-1e5a.com/',
+
+   siteRoot: 'http://localhost:3000',
 */
 
 export default {
@@ -73,21 +77,21 @@ export default {
       )
     }
   },
-  webpack:[
-    (prev, 
-      {
-      stage, defaultLoaders
-      }
-    ) => {
-        console.log("webpack mod called")
-        console.log(prev);
-        prev.plugins = [
-          ...prev.plugins,
-          new workbox.GenerateSW()
-        ]
-        return {
-          ...prev
-        };
-    }
-  ]
+  // webpack:[
+  //   (prev, 
+  //     {
+  //     stage, defaultLoaders
+  //     }
+  //   ) => {
+  //       console.log("webpack mod called")
+  //       console.log(prev);
+  //       prev.plugins = [
+  //         ...prev.plugins,
+  //         new workbox.GenerateSW()
+  //       ]
+  //       return {
+  //         ...prev
+  //       };
+  //   }
+  // ]
 }

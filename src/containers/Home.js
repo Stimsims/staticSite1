@@ -14,7 +14,7 @@ class Home extends React.Component{
       <div>
         <h1 style={{ textAlign: 'center' }}>Welcome to</h1>
         <img src={logoImg} alt="" />
-        All Posts1:
+        All Posts1222:
         <ul>
           {this.props.posts.map(post => (
             <li key={post.id}>
