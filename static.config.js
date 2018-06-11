@@ -13,7 +13,8 @@ import React from 'react';
 */
 
 export default {
-  siteRoot: 'https://illulli-1e5a.com/',
+  siteRoot: 'https://illulli.github.io/',
+  basePath:'staticSite1',
   getSiteData: () => ({
     title: 'React Static',
   }),
