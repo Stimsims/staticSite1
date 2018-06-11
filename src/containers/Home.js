@@ -1,11 +1,30 @@
 import React from 'react'
-import { withSiteData } from 'react-static'
+import { withRouteData, Link } from 'react-static'
 //
 import logoImg from '../logo.png'
 
-export default withSiteData(() => (
-  <div>
-    <h1 style={{ textAlign: 'center' }}>Welcome to</h1>
-    <img src={logoImg} alt="" />
-  </div>
-))
+class Home extends React.Component{
+  constructor(props){
+    super(props);
+    console.log("home props");
+    console.log(props);
+  }
+  render(){
+    return(
+      <div>
+        <h1 style={{ textAlign: 'center' }}>Welcome to</h1>
+        <img src={logoImg} alt="" />
+        All Posts:
+        <ul>
+          {this.props.posts.map(post => (
+            <li key={post.id}>
+              <Link to={`/blog/post/${post.id}/`}>{post.title}</Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+    )
+  }
+}
+
+export default withRouteData(Home);

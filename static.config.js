@@ -10,6 +10,8 @@ export default {
   getRoutes: async () => {
     //const { data: posts } = await axios.get('https://jsonplaceholder.typicode.com/posts')
    // let posts = file;
+  //  console.log("posts = ");
+  //  console.log(posts);
     return [
       {
         path: '/',
@@ -18,7 +20,21 @@ export default {
           posts,
         }),
         children: posts.map(post => ({
-          path: `post/${post.id}`,
+          path: `/post/${post.id}`,
+          component: 'src/containers/Post',
+          getData: () => ({
+            post,
+          }),
+        }))
+      },
+      {
+        path: '/blog',
+        component: 'src/containers/Blog',
+        getData: () => ({
+          posts,
+        }),
+        children: posts.map(post => ({
+          path: `/post/${post.id}`,
           component: 'src/containers/Post',
           getData: () => ({
             post,
