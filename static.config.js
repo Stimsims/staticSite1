@@ -13,12 +13,12 @@ export default {
     return [
       {
         path: '/',
-        component: 'staticSite1/src/containers/Blog',
+        component: 'src/containers/Home',
         getData: () => ({
           posts,
         }),
         children: posts.map(post => ({
-          path: `staticSite1//post/${post.id}`,
+          path: `post/${post.id}`,
           component: 'src/containers/Post',
           getData: () => ({
             post,
@@ -26,12 +26,12 @@ export default {
         })),
       },
       {
-        path: 'staticSite1/about',
+        path: 'about',
         component: 'src/containers/About',
       },
       {
         is404: true,
-        component: 'staticSite1/src/containers/404',
+        component: 'src/containers/404',
       },
     ]
   },
