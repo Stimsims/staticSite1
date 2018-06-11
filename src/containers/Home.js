@@ -18,7 +18,7 @@ class Home extends React.Component{
         <ul>
           {this.props.posts.map(post => (
             <li key={post.id}>
-              <Link to={`/blog/post/${post.id}/`}>{post.title}</Link>
+              <Link to={`/post/${post.id}/`}>{post.title}</Link>
             </li>
           ))}
         </ul>
