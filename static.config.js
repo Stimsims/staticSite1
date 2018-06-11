@@ -2,6 +2,7 @@ import axios from 'axios'
  import posts from './posts/index.js';
 
 export default {
+  siteRoot: 'https://illulli.github.io/staticSite1/',
   getSiteData: () => ({
     title: 'React Static',
   }),
@@ -11,12 +12,12 @@ export default {
     return [
       {
         path: '/',
-        component: 'src/containers/Blog',
+        component: 'staticSite1/src/containers/Blog',
         getData: () => ({
           posts,
         }),
         children: posts.map(post => ({
-          path: `/post/${post.id}`,
+          path: `staticSite1//post/${post.id}`,
           component: 'src/containers/Post',
           getData: () => ({
             post,
@@ -24,12 +25,12 @@ export default {
         })),
       },
       {
-        path: '/about',
+        path: 'staticSite1/about',
         component: 'src/containers/About',
       },
       {
         is404: true,
-        component: 'src/containers/404',
+        component: 'staticSite1/src/containers/404',
       },
     ]
   },

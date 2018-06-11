@@ -19,10 +19,10 @@ const universalOptions = {
   },
 }
 
-  const t_0 = universal(import('../src/containers/Blog'), universalOptions)
+  const t_0 = universal(import('../staticSite1/src/containers/Blog'), universalOptions)
 const t_1 = universal(import('../src/containers/Post'), universalOptions)
 const t_2 = universal(import('../src/containers/About'), universalOptions)
-const t_3 = universal(import('../src/containers/404'), universalOptions)
+const t_3 = universal(import('../staticSite1/src/containers/404'), universalOptions)
 
 
 // Template Map
