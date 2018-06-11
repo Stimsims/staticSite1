@@ -2,7 +2,7 @@ import axios from 'axios'
  import posts from './posts/index.js';
 
 export default {
-  siteRoot: 'https://illulli.github.io',
+  siteRoot: 'https://illulli.github.io/staticSite1',
   getSiteData: () => ({
     title: 'React Static',
   }),
